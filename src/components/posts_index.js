@@ -1,4 +1,4 @@
-import react, { Component } from 'react';
+import React, { Component } from 'react';
 
 class PostIndex extends Component{
   render(){
@@ -9,3 +9,5 @@ class PostIndex extends Component{
     );
   }
 }
+
+export default PostIndex;
