@@ -4,7 +4,8 @@ import { fetchPost } from '../actions';
 
 class PostsShow extends Component{
   componentDidMount() {
-    this.props.fetchPost();
+    { id } = this.props.match.params.id;
+    this.props.fetchPost(id);
   }
 
   render() {
@@ -14,6 +15,10 @@ class PostsShow extends Component{
       </div>
     );
   };
+}
+
+function mapStateTpProps({ post }){
+
 }
 
 export default connect(null, { fetchPost })(PostsShow);
