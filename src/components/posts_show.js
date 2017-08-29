@@ -17,8 +17,8 @@ class PostsShow extends Component{
   };
 }
 
-function mapStateTpProps({ post }){
-
+function mapStateTpProps({ post }, ownProps){
+  return { post: posts[ownProps.match.params.id] };
 }
 
 export default connect(null, { fetchPost })(PostsShow);
