@@ -4,7 +4,7 @@ import { fetchPost } from '../actions';
 
 class PostsShow extends Component{
   componentDidMount() {
-    { id } = this.props.match.params.id;
+    const { id } = this.props.match.params.id;
     this.props.fetchPost(id);
   }
 
